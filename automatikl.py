@@ -26,3 +26,10 @@ with open('produtos.txt', 'r') as filename:
                 
                 pyautogui.click(593, 733,duration=0.4)
                 sleep(1)
+# automacao em py
+                
+#.\env\Scripts\Activate.ps1
+# pip install pyautogui pillow
+# pip install pyinstaller
+# Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+# pyinstaller --onefile -w app.py
