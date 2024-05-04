@@ -1,0 +1,44 @@
+from tkinter import *
+from tkinter import ttk
+
+window= Tk()
+
+window.geometry("700x350")
+window.configure(background='blue')
+#tamanho fixo
+window.resizable(0, 0)
+def show_msg():
+   print('foda mlk')
+
+a = Label(window ,text = "First Name").grid(row = 0,column = 0)
+b = Label(window ,text = "Last Name", font='Arial 10', foreground='white', background='blue').grid(row = 1,column = 0)
+c = Label(window ,text = "Email Id", font='Arial 10', foreground='white', background='blue').grid(row = 2,column = 0)
+d = Label(window ,text = "Contact Number", font='Arial 10', foreground='white', background='blue').grid(row = 3,column = 0)
+e = Label(window ,text = "FREE TRIAL PORRA DO CARALHOOO", font='Arial 10', foreground='white', background='blue').grid(row = 5,column = 0)
+a1 = Entry(window).grid(row = 0,column = 1)
+b1 = Entry(window).grid(row = 1,column = 1)
+c1 = Entry(window).grid(row = 2,column = 1)
+d1 = Entry(window).grid(row = 3,column = 1)
+#botao pra executar a funcao
+ttk.Button(window, text= "Click Here", command=show_msg).grid(row = 4,column =0)
+window.mainloop()
+
+
+
+from tkinter import *
+from tkinter import ttk
+window = Tk()
+window.title("Welcome to TutorialsPoint")
+window.geometry('400x400')
+window.configure(background = "blue");
+a = Label(window ,text = "First Name", background='blue', foreground='white').grid(row = 0,column = 0)
+b = Label(window ,text = "Last Name", background='blue', foreground='white').grid(row = 1,column = 0)
+c = Label(window ,text = "Email Id", background='blue', foreground='white').grid(row = 2,column = 0)
+d = Label(window ,text = "Contact Number", background='blue', foreground='white').grid(row = 3,column = 0)
+a1 = Entry(window).grid(row = 0,column = 1)
+b1 = Entry(window).grid(row = 1,column = 1)
+c1 = Entry(window).grid(row = 2,column = 1)
+d1 = Entry(window).grid(row = 3,column = 1)
+btn = ttk.Button(window ,text="Submit").grid(row=4,column=0)
+aaaae = Label(window ,text = "FREE TRIAL ARROMBADO DO CARALHO PQPQ", font='Arial 10 bold', background='white', foreground='red').grid(row = 5,columnspan = 3)
+window.mainloop()
